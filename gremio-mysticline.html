@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Re-Anime - Gremio</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0c0c0e;
+      color: #d8d8e8;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+      background-color: #141417;
+    }
+
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 3.5rem;
+      color: #f0e6ff;
+      text-shadow: 2px 2px 6px #6c52b5;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-height: 1080px;
+      object-fit: cover;
+      border-bottom: 4px solid #222;
+    }
+
+    .descripcion {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .descripcion p {
+      font-size: 1.2rem;
+      color: #c2b8dd;
+    }
+
+    
+    .seccion-artistas {
+      padding: 50px 20px 20px;
+      text-align: center;
+    }
+
+    .seccion-artistas h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2rem;
+      color: #e0d0ff;
+      margin-bottom: 30px;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+
+    .portfolio-item {
+      background-color: #1a1a1e;
+      border: 1px solid #3a3a4a;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.03);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-item p {
+      margin: 0;
+      font-weight: bold;
+      font-family: 'Cinzel', serif;
+      color: #d9ccff;
+      font-size: 1.1rem;
+    }
+
+    .contacto {
+      background-color: #1a1a1e;
+      padding: 50px 20px;
+    }
+
+    .contacto h2 {
+      text-align: center;
+      font-family: 'Cinzel', serif;
+      color: #e0d0ff;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      background-color: #292933;
+      color: #f0f0f0;
+      border: 1px solid #555;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #6c52b5;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #8d6de9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #121214;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Re-Anime</h1>
+  </header>
+
+  <img src="reanime.png" alt="Arte de Re-Anime" class="hero-img">
+
+  <section class="descripcion">
+    <p>
+      El gremio <strong>Re-Anime</strong> fusiona elementos místicos, surrealistas y mágicos dentro del estilo anime. Cada ilustración lleva una atmósfera encantadora, cargada de simbolismos y detalles etéreos. Ideal para proyectos que buscan un aura misteriosa y profunda.
+    </p>
+  </section>
+
+ 
+  <section class="seccion-artistas">
+    <h2>Conoce más el arte de los artistas que forman parte del gremio</h2>
+  </section>
+
+  <section class="portfolio">
+    <div class="portfolio-item">
+      <img src="reanime/1.png" alt="Arte de KuroShade">
+      <p>KuroShade</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="reanime/2.png" alt="Arte de AyameVoid">
+      <p>AyameVoid</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="reanime/3.png" alt="Arte de LumaEclipse">
+      <p>LumaEclipse</p>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <h2>Contacto con el gremio</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Re-Anime - Parte de COMMISHOP
+  </footer>
+
+</body>
+</html>

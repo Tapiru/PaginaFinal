@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furry GAM - Gremio</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Nunito&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #0d0d12;
+      color: #e0e0f8;
+    }
+
+    header {
+      background: linear-gradient(145deg, #292942, #181828);
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-family: 'Kanit', sans-serif;
+      font-size: 3.5rem;
+      color: #ff94f2;
+      text-shadow: 0 0 6px #7bf0ff;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-height: 1080px;
+      object-fit: cover;
+      border-bottom: 4px solid #ffb2ff;
+    }
+
+    
+    .seccion-artistas {
+      padding: 40px 20px 10px;
+      text-align: center;
+    }
+
+    .seccion-artistas h2 {
+      font-family: 'Kanit', sans-serif;
+      font-size: 2rem;
+      color: #7bf0ff;
+      margin-bottom: 30px;
+      text-shadow: 0 0 4px #2bffd1;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+    }
+
+    .portfolio-item {
+      background-color: #1c1c2a;
+      border: 2px solid #6e81ff;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px #2e2e4f;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-item p {
+      margin: 0;
+      color: #ffb2ff;
+      font-weight: bold;
+    }
+
+    .descripcion {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .descripcion p {
+      font-size: 1.2rem;
+      color: #c8ccff;
+    }
+
+    .contacto {
+      background-color: #1b1c2b;
+      padding: 50px 20px;
+    }
+
+    .contacto h2 {
+      text-align: center;
+      font-family: 'Kanit', sans-serif;
+      color: #7bf0ff;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      background-color: #0f0f1c;
+      color: #e0e0f8;
+      border: 2px solid #6e81ff;
+      border-radius: 10px;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #6e81ff;
+      border: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 10px;
+    }
+
+    button:hover {
+      background-color: #8796ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #181828;
+      color: #8888aa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Furry GAM</h1>
+  </header>
+
+  <img src="furrygam.png" alt="Arte Furry GAM" class="hero-img">
+
+  <section class="seccion-artistas">
+    <h2>Conoce más el arte de los artistas que forman parte del gremio</h2>
+  </section>
+
+
+  <section class="portfolio">
+    <div class="portfolio-item">
+      <img src="furry/1.jpg" alt="Arte de ZukiWolf">
+      <p>ZukiWolf</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="furry/2.png" alt="Arte de EchoClaw">
+      <p>EchoClaw</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="furry/3.png" alt="Arte de NyraFang">
+      <p>NyraFang</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="furry/4.jpg"Arte de BlazeTail">
+      <p>BlazeTail</p>
+    </div>
+  </section>
+
+  <section class="descripcion">
+    <p>
+      <strong>Furry GAM</strong> es un gremio dedicado al arte furry en todas sus formas: personajes antropomórficos, retratos personalizados, cómics, escenas con fondos, ¡y mucho más! Aquí se celebra la identidad, la diversidad y la imaginación en cada trazo. Si te gustan los personajes peludos, aquí es tu lugar.
+    </p>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <h2>¡Contáctanos para tu comisión furry!</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre o nickname" required>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <textarea rows="5" placeholder="Cuéntanos qué tipo de arte furry deseas" required></textarea>
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Furry GAM - Parte de COMMISHOP
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="comi.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMMISHOP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+
+    <style>
+      .timeline {
+        max-width: 600px;
+        margin: 50px auto 0 auto;
+        border-left: 3px solid #8888ff;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .timeline-step {
+        position: relative;
+        margin-bottom: 30px;
+      }
+
+      .timeline-step .dot {
+        width: 14px;
+        height: 14px;
+        background-color: #8888ff;
+        border-radius: 50%;
+        position: absolute;
+        left: -27px;
+        top: 5px;
+        box-shadow: 0 0 5px #8888ff;
+      }
+
+      .timeline-step p {
+        margin: 0;
+        font-size: 1rem;
+      }
+    </style>
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo.png" alt="COMMISHOP Logo" style="height: 40px;" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#destacados">Destacados</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gremios">Gremios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>¡Equipos dedicados para lo que quieres hacer!</h1>
+      <p>Conéctate con un grupo de artistas de lo que estés buscando fácilmente.</p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="destacados" class="container my-5">
+    <h2 class="text-center mb-4">¡Gremios Destacados de la Semana!</h2>
+    <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="gremio-pixelbrush.html"><img src="bot-ceteria.png" class="d-block w-100" alt="PixelBrush"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="gremio-neoink.html"><img src="furrygam.png" class="d-block w-100" alt="NeoInk"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="gremio-mysticline.html"><img src="reanime.png" class="d-block w-100" alt="MysticLine"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="gremio-vectron.html"><img src="chibiland.png" class="d-block w-100" alt="Vectron"></a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="gremios" class="container my-5">
+    <h2 class="text-center mb-4">Todos los Gremios:</h2>
+
+    <div class="gremio-item">
+      <img src="bot-ceteria.png" alt="PixelBrush" class="gremio-img">
+      <div>
+        <h5>Bot-cetería</h5>
+        <p>¿Estás buscando sketches simples para concept art y videojuego?</p>
+        <a href="gremio-pixelbrush.html">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="gremio-item">
+      <img src="furrygam.png" alt="NeoInk" class="gremio-img">
+      <div>
+        <h5>Furry GAM</h5>
+        <p>¡Arte Furry de cualquier tipo para quien lo desee!</p>
+        <a href="gremio-neoink.html">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="gremio-item">
+      <img src="reanime.png" alt="MysticLine" class="gremio-img">
+      <div>
+        <h5>Re-Anime</h5>
+        <p>Artistas que fusionan elementos místicos y surrealistas en ilustraciones detalladas estilo anime.</p>
+        <a href="gremio-mysticline.html">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="gremio-item">
+      <img src="chibiland.png" alt="Vectron" class="gremio-img">
+      <div>
+        <h5>ChibiLand</h5>
+        <p>¿Buscas algo pequeño y abrazable?</p>
+        <a href="gremio-vectron.html">Ver más →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="about" class="container my-5">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>Gremios que se unen por temáticas y calidad</h5>
+        <p>Portafolio creado por gremios que comparten estilo y objetivos creativos.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Equipos creativos</h5>
+        <p>Exposición conjunta con identidad visual coherente y profesional.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Precios justos para ambas partes</h5>
+        <p>Precios justos para artistas dedicados.</p>
+      </div>
+    </div>
+
+    <!-- LÍNEA DEL TIEMPO -->
+    <div class="timeline my-5">
+      <h3 class="text-center mb-4">¿Cómo Comisionar?</h3>
+      <div class="timeline-step">
+        <div class="dot"></div>
+        <p><strong>1. Elige un gremio</strong> según la temática o estilo que buscas.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="dot"></div>
+        <p><strong>2. Contacta fácilmente</strong> al artista o equipo que te interesa.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="dot"></div>
+        <p><strong>3. Espera confirmación</strong> del artista para acordar detalles y comenzar.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="dot"></div>
+        <p><strong>4. Recibe tu pedido</strong> por correo electrónico una vez terminado. El pago se hace mediante <strong>PayPal</strong> desde la página.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4">
+    <p class="mb-0">© 2025 COMMISHOP</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    const numParticles = 100;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    class Particle {
+      constructor() { this.reset(); }
+
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * -canvas.height;
+        this.radius = Math.random() * 1.5 + 0.5;
+        this.speed = Math.random() * 0.5 + 0.2;
+        this.alpha = Math.random() * 0.3 + 0.1;
+        this.offset = Math.random() * 2 * Math.PI;
+      }
+
+      update() {
+        this.y += this.speed;
+        this.x += Math.sin(this.offset + this.y * 0.01) * 0.2;
+        if (this.y > canvas.height + this.radius) this.reset();
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(180, 200, 255, ${this.alpha})`;
+        ctx.shadowColor = 'rgba(180, 200, 255, 0.1)';
+        ctx.shadowBlur = 4;
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < numParticles; i++) {
+      particles.push(new Particle());
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bot-cetería - Gremio</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background: #f4f4f3;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+    }
+
+    header {
+      background-color: #2a2d34;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 60px 20px 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 3.2rem;
+      letter-spacing: 3px;
+      font-weight: 700;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-height: 1080px;
+      object-fit: cover;
+      border-bottom: 6px solid #2a2d34;
+      filter: grayscale(10%);
+      cursor: default;
+    }
+
+    .descripcion {
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .descripcion strong {
+      color: #2a2d34;
+    }
+
+    
+    .seccion-artistas {
+      padding: 50px 20px 20px;
+      text-align: center;
+    }
+
+    .seccion-artistas h2 {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 2rem;
+      color: #2a2d34;
+      margin-bottom: 30px;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+
+    .portfolio-item {
+      background-color: #ffffff;
+      border: 2px solid #2a2d34;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    .portfolio-item p {
+      margin: 0;
+      font-weight: bold;
+      color: #2a2d34;
+    }
+
+    .contacto {
+      background-color: #f0f0f0;
+      padding: 50px 20px;
+      border-top: 2px solid #2a2d34;
+    }
+
+    .contacto h2 {
+      text-align: center;
+      font-family: 'Roboto Mono', monospace;
+      color: #2a2d34;
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 14px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 2px solid #2a2d34;
+      font-family: 'Open Sans', sans-serif;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #6d93f7;
+      background: #e8ebff;
+    }
+
+    button {
+      padding: 14px;
+      background-color: #2a2d34;
+      color: white;
+      border: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #5a72f7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2a2d34;
+      color: #bbb;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bot-cetería</h1>
+  </header>
+
+  <img src="bot-ceteria.png" alt="Sketches y Concept Art de Bot-cetería" class="hero-img" />
+
+  <section class="descripcion">
+    <p>
+      <strong>Bot-cetería</strong> es un gremio especializado en sketches simples y efectivos para concept art y videojuegos. Si buscas bocetos rápidos que capten la esencia de personajes, escenarios o ideas visuales, aquí encontrarás a los artistas ideales.
+    </p>
+    <p>
+      Trabajamos con métodos ágiles y flexibles para ajustarnos a tus necesidades y ayudarte a dar vida a tus proyectos.
+    </p>
+  </section>
+
+  
+  <section class="seccion-artistas">
+    <h2>Conoce más el arte de los artistas que forman parte del gremio</h2>
+  </section>
+
+  <section class="portfolio">
+    <div class="portfolio-item">
+      <img src="botcetería/1.png" alt="Arte de Gridline">
+      <p>Gridline</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="botcetería/2.png" alt="Arte de MechaInk">
+      <p>MechaInk</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="botcetería/3.png" alt="Arte de VectorVox">
+      <p>VectorVox</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="botcetería/4.png" alt="Arte de EchoDraft">
+      <p>EchoDraft</p>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <h2>Contacto para comisiones</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo electrónico" required />
+      <textarea rows="5" placeholder="Describe lo que necesitas para tu proyecto" required></textarea>
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Bot-cetería - Parte de COMMISHOP
+  </footer>
+
+</body>
+</html>

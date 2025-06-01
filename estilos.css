@@ -1,0 +1,127 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #0e0f11;
+    font-family: 'Poppins', sans-serif;
+    color: #b0c4d8;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("https://www.transparenttextures.com/patterns/noise.png");
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  #particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .navbar {
+    background-color: #1a1c20;
+    z-index: 1;
+  }
+  
+  .navbar-brand span {
+    color: #c0d0ff;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #b0c4d8;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #d0e4ff;
+  }
+  
+  .hero {
+    background: linear-gradient(to bottom, #3636449a 0%, rgba(14, 15, 17, 0.625) 100%);
+    padding: 80px 0;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .hero h1, .hero p {
+    color: #c8d4e8;
+    animation: chromaticShift 6s infinite linear;
+  }
+  
+  @keyframes chromaticShift {
+    0% { text-shadow: 1px 0 red, -1px 0 blue; }
+    50% { text-shadow: -1px 0 red, 1px 0 blue; }
+    100% { text-shadow: 1px 0 red, -1px 0 blue; }
+  }
+  
+  h2, h5, p {
+    color: #b0c4d8;
+  }
+  
+  .section-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 4rem 0 2rem;
+  }
+  
+  .carousel-item img {
+    height: 700px;
+    width: 1920px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-item:hover img {
+    transform: scale(1.0);
+  }
+  
+  .gremio-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    background-color: #1c1e24;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gremio-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(100, 150, 255, 0.2);
+  }
+  
+  .gremio-img {
+    width: 300px;
+    border-radius: 8px;
+    filter: grayscale(30%);
+  }
+  
+  footer {
+    background-color: #1a1c20;
+    color: #7a8ca4;
+  }
+  
+  a {
+    color: #8ab4f8;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #d0e4ff;
+  }
+  

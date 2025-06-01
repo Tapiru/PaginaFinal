@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChibiLand - Gremio</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #e9f8ff;
+      color: #444;
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      background: linear-gradient(180deg, #c2ecff, #e6faff);
+    }
+
+    header h1 {
+      font-family: 'Fredoka', cursive;
+      font-size: 3.2rem;
+      color: #3bb4e5;
+      text-shadow: 2px 2px 0 #fff;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-height: 1080px;
+      object-fit: cover;
+      border-bottom: 6px dotted #a6ddf5;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px 20px 0;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .portfolio-item {
+      background: #fff;
+      border: 2px solid #a6ddf5;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .portfolio-item p {
+      font-weight: bold;
+      padding: 10px;
+      margin: 0;
+      font-size: 1rem;
+      color: #3bb4e5;
+    }
+
+    .descripcion {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .descripcion p {
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    .contacto {
+      background-color: #d9f3ff;
+      padding: 50px 20px;
+    }
+
+    .contacto h2 {
+      text-align: center;
+      font-family: 'Fredoka', cursive;
+      color: #3bb4e5;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      background-color: #fff;
+      color: #444;
+      border: 2px solid #a6ddf5;
+      border-radius: 10px;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #3bb4e5;
+      border: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 10px;
+    }
+
+    button:hover {
+      background-color: #5cccf2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e0f7ff;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ChibiLand</h1>
+  </header>
+
+  <img src="chibiland.png" alt="Arte de ChibiLand" class="hero-img">
+
+  
+<section style="text-align:center; padding: 40px 20px 10px;">
+  <h2 style="font-family: 'Fredoka', cursive; color: #3bb4e5; font-size: 2rem; margin-bottom: 10px;">
+    Conoce más el arte de los artistas que forman parte del gremio
+  </h2>
+</section>
+
+ 
+  <section class="portfolio">
+    <div class="portfolio-item">
+      <img src="Chibi/1.png" alt="Arte de MokaChan">
+      <p>MokaChan</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="Chibi/2.png" alt="Arte de UsagiLuna">
+      <p>UsagiLuna</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="Chibi/3.jpg" alt="Arte de PikoPiko">
+      <p>PikoPiko</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="Chibi/4.png" alt="Arte de KawaiiDrop">
+      <p>KawaiiDrop</p>
+    </div>
+  </section>
+
+  
+  <section class="descripcion">
+    <p>
+      En <strong>ChibiLand</strong>, la ternura es prioridad. Este gremio se especializa en ilustraciones chibi adorables, personajes pequeñitos con expresiones divertidas, pastelitos con caritas y mundos donde todo parece salido de una caricatura de ensueño. ¡Perfecto para quienes quieren abrazar la dulzura visual!
+    </p>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <h2>¡Contáctanos!</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea rows="5" placeholder="¿Qué tipo de arte chibi estás buscando?" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 ChibiLand - Parte de COMMISHOP
+  </footer>
+
+</body>
+</html>
